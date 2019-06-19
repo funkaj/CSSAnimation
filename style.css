@@ -1,0 +1,59 @@
+#container {
+    min-width: 95vw;
+    border: red solid 2px;
+    min-height: 95vh;
+    margin: 0 auto;
+}
+
+#ground {
+    max-width: 50vw;
+    min-height: 40px;
+    background-color: brown;
+    margin: 0 auto;
+    margin-top: 85vh;
+}
+
+#ball {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: moveball;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveball {
+    from {
+        top: 10vh;
+        left: 50%;
+        background-color: blue;
+        animation-timing-function: ease-out;
+      }
+    
+      25% {
+        top: 83vh;
+        left: 50%;
+        animation-timing-function: ease-out;
+      }
+    
+      50% {
+        top: 25vh;
+        left: 50%;
+        animation-timing-function: ease-out;
+    }
+    
+    75% {
+        top: 83vh;
+        left: 50%;
+        animation-timing-function: ease-out;
+    }
+    
+    to {
+        top: 50vh;
+        left: 50%;
+        background-color: red;
+      }
+}
+
